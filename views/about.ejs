@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+       
+       <!-- <h1><%=mobileno%></h1><br>
+       <h1><%=LastName%></h1><br>
+       <h1><%=FirstName%></h1><br>
+       <h1><%=middlename%></h1><br>
+       <h1><%=date%></h1><br>
+       <h1><%=whatsappno%></h1><br>
+       <h1><%=whatsappno%></h1><br>
+       <h1><%=address%></h1><br>
+       <h1><%=pincode%></h1><br>
+       <h1><%=landlineNo%></h1><br>
+       <h1><%=landlineNo2%></h1><br>
+       <h1><%=mobileno2%></h1><br>
+       <h1><%=email%></h1><br>
+       <h1><%=country%></h1><br>
+       <h1><%=state%></h1><br>
+        <h1><%=Orgaization%></h1><br>
+        <h1><%=Department%></h1><br>
+        <h1><%=Designation%></h1><br>
+        <h1><%=LLNumb%></h1><br>
+        <h1><%=LLNumb2%></h1><br>
+        <h1><%=MNumber%></h1><br>
+        <h1><%=MNumber2%></h1><br>
+        <h1><%=Pemail%></h1><br>
+        <h1><%=Email2%></h1><br>
+        <h1><%=FNumber%></h1><br>
+        <h1><%=Website%></h1><br>
+        <h1><%=Ofaddress%></h1><br>
+        <h1><%=city%></h1><br>
+        <h1><%=Pdistrict%></h1><br>
+        <h1><%=Ppincode%></h1><br>
+        <h1><%=Pcountry%></h1><br>
+        <h1><%=Pstate%></h1><br>
+        <h1><%=Planguage%></h1><br>
+        <h1><%=Pcategory%></h1><br>
+        <h1><%=PInterestarea%></h1><br>
+        -->
+        <div class="image heading">
+            <img src="image.jpg" alt="search image">
+
+            <h1 style="display: inline-block;  line-height: 68px;">Personal Information</h1>
+        </div>
+        <div class="mainForm">
+            <div class="subDiv">
+                <div class="input form-group">
+                    <label for="fname">First name:</label> <br />
+                    <input class="form-control" type="text" value="<%=FirstName%>" name="middlename" disabled="disabled"/>
+                </div>
+                <div class="input" class="form-control">
+                    <label for="Mname">Middle name:</label><br />
+                    <input class="form-control" type="text" value="<%=middlename%>" name="middlename" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="Lname">Last name:</label><br />
+                    <input class="form-control" type="text" value="<%=LastName%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="Date"> Date:</label> <br />
+                    <input class="form-control" type="text" value="<%=date%>" name="lname" disabled="disabled"/>
+                </div>
+            </div>
+            
+            <div class="subDiv">
+                <div class="input">
+                    <label for="LLNumb">LandLine Number:</label><br />
+                    <input class="form-control" type="text" value="<%=landlineNo%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="LLNumb2">LandLine Number2: </label> <br />
+                    <input class="form-control" type="text" value="<%=landlineNo2%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="MNumber">Mobile Number: </label> <br />
+                    <input class="form-control" type="text" value="<%=MNumber%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="MNumber2">Mobile Number2: </label> <br />
+                    <input class="form-control" type="text" value="<%=mobileno2%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="Email">Email: </label> <br />
+                    <input class="form-control" type="text" value="<%=Pemail%>" name="lname" disabled="disabled"/>
+                </div>
+            </div>
+            <div class="subDiv" style="width: 300px;">
+                <div class="input">
+                    <label for="Wnumber">WhatsApp Number: </label> <br />
+                    <input class="form-control" type="text" value="<%=whatsappno%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="address"> Adress: </label> <br />
+                    <input class="form-control" type="text" value="<%=address%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="city">Village/Town/City: </label> <br />
+                    <input class="form-control" type="text" value="<%=village%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="district">District: </label> <br />
+                    <input class="form-control" type="text" value="<%=district%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="pincode">Pincode: </label> <br />
+                    <input class="form-control" type="text" value="<%=pincode%>" name="lname" disabled="disabled"/>
+                </div>
+            </div>
+            <div class="subDiv">
+                <div class="input">
+                    <label for="country">Country:</label> <br />
+                    <input class="form-control" type="text" value="<%=country%>" name="lname" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="State">State: </label> <br />
+                    <input class="form-control" type="text" value="<%=state%>" name="lname" disabled="disabled"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+        <div>
+            <h1 style="text-align: center; height: 73px; line-height: 73px;" class="heading">Professional
+                Information</h1>
+
+        </div>
+        <div class="mainForm" action="#">
+            <div class="subDiv">
+                <div class="input">
+                    <label for="Orgaization">Orgaization: </label> <br />
+                    <input class="form-control" type="text" value="<%=Orgaization%>" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="Designation">Designation: </label> <br />
+                    <input class="form-control" type="text" value="<%=Designation%>" disabled="disabled"/>
+                </div>
+                <div class="input">
+                    <label for="Department">Department: </label> <br />
+                    <input class="form-control" type="text" value="<%=Department%>" disabled="disabled" name="PDepartment" />
+                </div>
+                <div class="input">
+                    <label for="PLLNumb">LandLine Number:</label> <br />
+                    <input class="form-control" type="text" value="<%=LLNumb%>" disabled="disabled" name="PDepartment" />
+                </div>
+                <div class="input">
+                    <label for="PLLNumb2">LandLine Number2: </label> <br />
+                    <input class="form-control" type="text" value="<%=LLNumb2%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+            </div>
+            <div class="subDiv">
+                <div class="input">
+                    <label for="PMNumber">Mobile Number: </label> <br />
+                    <input class="form-control" type="text" value="<%=MNumber%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="PMNumber2">Mobile Number2: </label> <br />
+                    <input class="form-control" type="text" value="<%=MNumber2%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="PEmail">Email: </label> <br />
+                    <input class="form-control" type="text" value="<%=Pemail%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="PEmail2">Email2: </label> <br />
+                    <input class="form-control" type="text" value="<%=Email2%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="FNumber">Fax Number: </label> <br />
+                    <input class="form-control" type="text" value="<%=FNumber%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+            </div>
+            <div class="subDiv" style="width: 300px;">
+                <div class="input">
+                    <label for="Website">Website: </label> <br />
+                    <input class="form-control" type="text" value="<%=Website%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="Ofaddress"> Office Address: </label> <br />
+                    <input class="form-control" type="text" value="<%=Ofaddress%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="Pcity">Village/Town/City: </label> <br />
+                    <input class="form-control" type="text" value="<%=city%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="Pdistrict">District: </label> <br />
+                    <input class="form-control" type="text" value="<%=Pdistrict%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="Ppincode">Pincode: </label> <br />
+                    <input class="form-control" type="text" value="<%=Ppincode%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+            </div>
+            <div class="subDiv">
+                <div class="input">
+                    <label for="Pcountry">Country:</label> <br />
+                    <input class="form-control" type="text" value="<%=Pcountry%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="PState">State: </label> <br />
+                    <input class="form-control" type="text" value="<%=Pstate%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="Planguage">language</label> <br>
+                    <input class="form-control" type="text" value="<%=Planguage%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="Pcategory">category</label> <br>
+                    <input class="form-control" type="text" value="<%=Pcategory%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+                <div class="input">
+                    <label for="Pcategory">Interest Area</label> <br>
+                    <input class="form-control" type="text" value="<%=PInterestarea%>" disabled="disabled" name="PLLNumb2" />
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

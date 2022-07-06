@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalDocument</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- 
+    <div class="box" id="heading">
+        <h1>
+            <%= listTitle %>
+        </h1>
+    </div> -->
+    <div style="background-color: #F2E6DF;">
+
+        <form action="/" method="post" class="item">
+            <div class="image heading">
+                <img src="image.jpg" alt="search image">
+
+                <h1 style="display: inline-block;  line-height: 68px;">Personal Information</h1>
+            </div>
+
+            <!-- <input type="text" name="fname" placeholder="first name">
+            <input type="text" name="lname" placeholder="Last name">
+            <input type="text" name="mobno" placeholder="Mobile no"> --> -->
+
+            <!-- //// yet to be added //////// -->
+
+            <!-- <input type="email" name="email" placeholder="Email">
+            <input type="text" name="WhatsApp no" placeholder="whatsapp no">
+            <input type="text" name="country" placeholder="Country">           
+             <button type="submit" name="list">+</button>
+              -->
+            <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <div class="mainForm">
+                <div class="subDiv">
+                    <div class="input form-group">
+                        <label for="fname">First name:</label> <br />
+                        <input class="form-control" type="text" name="fname" />
+                    </div>
+                    <div class="input" class="form-control">
+                        <label for="Mname">Middle name:</label><br />
+                        <input class="form-control" type="text" name="middlename" />
+                    </div>
+                    <div class="input">
+                        <label for="Lname">Last name:</label><br />
+                        <input class="form-control" type="text" name="lname" />
+                    </div>
+                    <div class="input">
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="Date"> Date:</label> <br />
+                        <input class="form-control" type="date" name="date" />
+                    </div>
+                </div>
+                <div class="subDiv">
+                    <div class="input">
+                        <label for="LLNumb">LandLine Number:</label><br />
+                        <input class="form-control" type="text" name="LLNumb" />
+                    </div>
+                    <div class="input">
+                        <label for="LLNumb2">LandLine Number2: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="LLNumb2" />
+                    </div>
+                    <div class="input">
+                        <label for="MNumber">Mobile Number: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="MNumber" />
+                    </div>
+                    <div class="input">
+                        <label for="MNumber2">Mobile Number2: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="MNumber2" />
+                    </div>
+                    <div class="input">
+                        <label for="Email">Email: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Email" name="Email" />
+                    </div>
+                </div>
+                <div class="subDiv" style="width: 300px;">
+                    <div class="input">
+                        <label for="Wnumber">WhatsApp Number: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="Wnumber" />
+                    </div>
+                    <div class="input">
+                        <label for="address"> Adress: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Address" name="address"
+                            id="address" />
+                    </div>
+                    <div class="input">
+                        <label for="city">Village/Town/City: </label> <br />
+                        <input class="form-control" type="text" name="village" />
+                    </div>
+                    <div class="input">
+                        <label for="district">District: </label> <br />
+                        <input class="form-control" type="text" name="district" />
+                    </div>
+                    <div class="input">
+                        <label for="pincode">Pincode: </label> <br />
+                        <input class="form-control" type="text" name="pincode" />
+                    </div>
+                </div>
+                <div class="subDiv">
+                    <div class="input">
+                        <label for="country">Country:</label> <br />
+                        <input class="form-control" type="text" name="country" />
+                    </div>
+                    <div class="input">
+                        <label for="State">State: </label> <br />
+                        <input class="form-control" type="text" name="state" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 style="text-align: center; height: 73px; line-height: 73px;" class="heading">Professional
+                    Information</h1>
+
+            </div>
+            <div class="mainForm" action="#">
+                <div class="subDiv">
+                    <div class="input">
+                        <label for="Orgaization">Orgaization: </label> <br />
+                        <input class="form-control" type="text" name="POrgaization" />
+                    </div>
+                    <div class="input">
+                        <label for="Designation">Designation: </label> <br />
+                        <input class="form-control" type="text" name="PDesignation" />
+                    </div>
+                    <div class="input">
+                        <label for="Department">Department: </label> <br />
+                        <input class="form-control" type="text" name="PDepartment" />
+                    </div>
+                    <div class="input">
+                        <label for="PLLNumb">LandLine Number:</label> <br />
+                        <input class="form-control" type="text" name="PLLNumb" />
+                    </div>
+                    <div class="input">
+                        <label for="PLLNumb2">LandLine Number2: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="PLLNumb2" />
+                    </div>
+                </div>
+                <div class="subDiv">
+                    <div class="input">
+                        <label for="PMNumber">Mobile Number: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="PMNumber" />
+                    </div>
+                    <div class="input">
+                        <label for="PMNumber2">Mobile Number2: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="PMNumber2" />
+                    </div>
+                    <div class="input">
+                        <label for="PEmail">Email: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Email" name="PEmail" />
+                    </div>
+                    <div class="input">
+                        <label for="PEmail2">Email2: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Email" name="PEmail2" />
+                    </div>
+                    <div class="input">
+                        <label for="FNumber">Fax Number: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Number" name="PFNumber" />
+                    </div>
+                </div>
+                <div class="subDiv" style="width: 300px;">
+                    <div class="input">
+                        <label for="Website">Website: </label> <br />
+                        <input class="form-control" type="text" name="PWebsite" />
+                    </div>
+                    <div class="input">
+                        <label for="Ofaddress"> Office Address: </label> <br />
+                        <input class="form-control" type="text" placeholder="Enter Address" name="POfaddress"
+                            id="Ofaddress" />
+                    </div>
+                    <div class="input">
+                        <label for="Pcity">Village/Town/City: </label> <br />
+                        <input class="form-control" type="text" name="Pcity" />
+                    </div>
+                    <div class="input">
+                        <label for="Pdistrict">District: </label> <br />
+                        <input class="form-control" type="text" name="Pdistrict" />
+                    </div>
+                    <div class="input">
+                        <label for="Ppincode">Pincode: </label> <br />
+                        <input class="form-control" type="text" name="Ppincode" />
+                    </div>
+                </div>
+                <div class="subDiv">
+                    <div class="input">
+                        <label for="Pcountry">Country:</label> <br />
+                        <input class="form-control " type="text" name="Pcountry" />
+                    </div>
+                    <div class="input">
+                        <label for="PState">State: </label> <br />
+                        <input class="form-control" type="text" name="PState" />
+                    </div>
+                    <div class="input">
+                        <label for="Planguage">language</label> <br>
+                        <input class="form-control" type="text" name="Planguage">
+                    </div>
+                    <div class="input">
+                        <label for="Pcategory">category</label> <br>
+                        <input class="form-control" type="text" name="Pcategory">
+                    </div>
+                    <div class="input">
+                        <label for="Pcategory">Interest Area</label> <br>
+                        <input class="form-control" type="text" name="Pinterestarea">
+                    </div>
+                </div>
+            </div>
+            <div class="submitClass">
+                <input type="submit" id="submitForm" class="btn btn-outline-primary" value="Create User" />
+            </div>
+
+        </form>
+
+
+
+
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Serial Number</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>>
+                    <th scope="col">Mobile Number</th>
+                    <th scope="col">To Delete</th>
+                    <th scope="col">View_Details</th>
+                    <th scope="col">View_Details</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <% var count=1 %>
+
+                    <% newListItems.forEach(function(item){ %>
+
+                        <tr>
+                            <!-- <th scope="row">1</th> -->
+                            <td>
+                                <%= count++ %>
+                            </td>
+                            <td>
+                                <%= item.firstname %>
+                            </td>
+                            <td>
+                                <%= item.lastname %>
+                            </td>
+                            <td>
+                                <%= item.mobileno %>
+                            </td>
+                            <td>
+                                <form action="/delete" method="post">
+                                    <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                        onchange="this.form.submit()">
+                                </form>
+
+                                <!-- <form action="/delete" id = <%=item._id %> method="post">                                   
+                                        
+                                        <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                            onchange="checker(item._id)" >
+
+                                    </form> -->
+
+                            </td>
+                            <td>
+                                <form action="/viewdetails" method="post">
+                                    <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                        onchange="this.form.submit()">
+                                </form>
+                            </td>
+                            <td>
+                                <form action="/viewdetails" method="post">
+                                    <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                        onchange="this.form.submit()">
+                                </form>
+                            </td>
+                        </tr>
+
+                        <% }) %>
+
+            </tbody>
+        </table>
+
+        <div>
+            <div>
+                <h2>Search User</h2>
+            </div>
+
+            <form action="/search" method="post">
+                <div class="input">
+                    <label for="address"> First Name </label> <br />
+                    <input class="form-control" type="text" placeholder="Enter First Name" name="firstnameSearch"
+                        id="" />
+
+                    <label for="address"> Last Name </label> <br />
+                    <input class="form-control" type="text" placeholder="Enter First Name" name="LastnameSearch"
+                        id="" />
+
+                    <div class="submitClass">
+                        <input type="submit" id="submitForm" class="btn btn-outline-primary" value="Search User" />
+                    </div>
+
+                </div>
+
+                <!-- <div>
+                    <input type="text" name="firstnameSearch" >
+                </div> -->
+            </form>
+
+        </div>
+        
+
+        <!--///////////////////////////////////////////////////////////////// -->
+
+        <!-- 
+         </div>
+
+        <div>
+        <table>
+            <tr>
+
+            </tr>
+
+        </table>
+ 
+      </div> -->
+        <!-- ///////////////////////////////// -->
+        <!-- <script>
+       function checker(count){
+        if(window.confirm("Are you sure")){
+          document.getElementById("count").submit();
+        } else {
+          return;
+        }
+      }
+       </script> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+ </div>
+
+
+
+
+  </body>
+
+</html>

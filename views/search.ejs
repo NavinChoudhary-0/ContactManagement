@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Search Users</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<h1><% listTitle %></h1>
+
+<h1>Search List Items</h1>
+<body>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Serial Number</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>>
+                <th scope="col">Mobile Number</th>
+                <th scope="col">To Delete</th>
+                <th scope="col">View_Details</th>
+                <th scope="col">View_Details</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <% var count=1 %>
+
+                <% searchListItems.forEach(function(item){ %>
+
+                    <tr>
+                        <!-- <th scope="row">1</th> -->
+                        <td>
+                            <%= count++ %>
+                        </td>
+                        <td>
+                            <%= item.firstname %>
+                        </td>
+                        <td>
+                            <%= item.lastname %>
+                        </td>
+                        <td>
+                            <%= item.mobileno %>
+                        </td>
+                        <td>
+                            <form action="/delete" method="post">
+                                <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                    onchange="this.form.submit()">
+                            </form>
+
+                            <!-- <form action="/delete" id = <%=item._id %> method="post">                                   
+                                    
+                                    <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                        onchange="checker(item._id)" >
+
+                                </form> -->
+
+                        </td>
+                        <td>
+                            <form action="/viewdetails" method="post">
+                                <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                    onchange="this.form.submit()">
+                            </form>
+                        </td>
+                        <td>
+                            <form action="/viewdetails" method="post">
+                                <input type="checkbox" name="checkboxitem" value="<%=item._id%>"
+                                    onchange="this.form.submit()">
+                            </form>
+                        </td>
+                    </tr>
+
+                    <% }) %>
+
+        </tbody>
+    </table>
+
+
+</body>
